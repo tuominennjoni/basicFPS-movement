@@ -15,8 +15,12 @@ public class FPSController : MonoBehaviour
     private bool isCrouching = false; // added
     private bool isSliding = false; // added
     private bool canJump = true; //added
-
-
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
+    public float fireRate = 0.5f;
+    private float nextFire;
+    private float bulletSpeed = 7000f;
+ 
     void Start() 
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -75,6 +79,13 @@ public class FPSController : MonoBehaviour
         if(cc.isGrounded)
         {
             canJump = true;
+        }
+
+        if(Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletSpeed);
         }
 
         Vector3 speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
