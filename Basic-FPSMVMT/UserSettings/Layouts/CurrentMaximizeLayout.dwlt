@@ -390,9 +390,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: -231, y: -197}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 3
       id: Scene View/Particles
       index: 10
       layout: 4
@@ -461,9 +461,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.272973, y: -7.0338, z: 16.05112}
+    m_Target: {x: 11.583176, y: 0.6635074, z: 11.828271}
     speed: 2
-    m_Value: {x: -3.272973, y: -7.0338, z: 16.05112}
+    m_Value: {x: 11.583176, y: 0.6635074, z: 11.828271}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -510,13 +510,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2035852, y: 0.62797815, z: -0.17502199, w: -0.73046297}
+    m_Target: {x: -0.13237262, y: 0.81092674, z: -0.201293, w: -0.5332638}
     speed: 2
-    m_Value: {x: -0.20358396, y: 0.62797433, z: -0.17502093, w: -0.7304585}
+    m_Value: {x: -0.13237171, y: 0.81092113, z: -0.20129162, w: -0.5332601}
   m_Size:
-    m_Target: 12.488298
+    m_Target: 1.2979441
     speed: 2
-    m_Value: 12.488298
+    m_Value: 1.2979441
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -626,7 +626,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 2c06ffff
       m_LastClickedID: -63956
-      m_ExpandedIDs: 2c06ffff64f9ffff30fbffff
+      m_ExpandedIDs: a071feffac71feff2c06ffff64f9ffff30fbffff265f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -717,22 +717,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/MentalDreamsAssets/SoldierSoundsPack
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/MentalDreamsAssets/SoldierSoundsPack
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jotuo\basicFPS-movement\Basic-FPSMVMT
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ead90000
-    m_LastClickedID: 55786
-    m_ExpandedIDs: 000000005c5f000000ca9a3b
+    m_SelectedIDs: 10f40000
+    m_LastClickedID: 62480
+    m_ExpandedIDs: 000000005c5f000092dc000026f4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -877,7 +877,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 238
+  m_LastVerticalScrollValue: 648
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

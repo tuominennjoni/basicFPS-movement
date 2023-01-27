@@ -17,12 +17,15 @@ public class FPSController : MonoBehaviour
     private bool canJump = true; //added
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
-    public float fireRate = 0.5f;
-    private float nextFire;
-    private float bulletSpeed = 7000f;
+    public float fireRate = 0.2f;
+    private float nextFire = 0.0f;
+    private float bulletSpeed = 100f;
+    private AudioSource audioSource;
+    public AudioClip gunShot;
  
     void Start() 
     {
+        audioSource = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked;
     }
     void Update()
@@ -85,7 +88,9 @@ public class FPSController : MonoBehaviour
         {
             nextFire = Time.time + fireRate;
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletSpeed);
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletSpeed;
+            Destroy(bullet, 2.0f);
+            audioSource.PlayOneShot(gunShot);
         }
 
         Vector3 speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
